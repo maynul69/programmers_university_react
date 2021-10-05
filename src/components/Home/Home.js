@@ -21,7 +21,7 @@ const Home = () => {
           <NavLink
             className="text-decoration-none font-weight-bold px-2 "
             style={{ fontSize: "50px", color: "blueviolet" }}
-            to="/home"
+            to="/apply"
           >
             Apply Now 
           </NavLink>
