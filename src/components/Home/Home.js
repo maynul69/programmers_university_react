@@ -17,24 +17,26 @@ const Home = () => {
     
     return (
       <div>
-        <div classname='py-4'>
+        <div classname="py-4">
           <NavLink
-            className="text-decoration-none font-weight-bold px-2"
-            style={{ fontSize: "50px", color: "blueviolet", }}
+            className="text-decoration-none font-weight-bold px-2 "
+            style={{ fontSize: "50px", color: "blueviolet" }}
             to="/home"
           >
-            Apply Now
+            Apply Now 
           </NavLink>
+
+
         </div>
-        <div className="row mx-auto mt-4">
+        <div className="row mx-auto mt-5">
           {serviceShort.map((service) => (
             <div className="col-md-4 mb-4">
-              <Card style={{ minHeight: "300px" }}>
+              <Card className="h-400" style={{ minHeight: "400px" }}>
                 <Card.Img
                   variant="top"
                   src={service.img}
                   className="img-fluid"
-                  style={{ width: "50%", height: "50%", margin: "auto" }}
+                  style={{ height: "50%", margin: "auto" }}
                 />
                 <Card.Body>
                   <Card.Title>{service.title}</Card.Title>
